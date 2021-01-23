@@ -1,9 +1,10 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  title: 'Learning Rxjs',
-  favicon: 'https://rxjs-dev.firebaseapp.com/assets/images/favicons/favicon.ico',
-  logo: 'https://rxjs-dev.firebaseapp.com/assets/images/logos/logo.png',
+  title: '领略 Rxjs 之美',
+  locales: [['zh-CN', '中文'], ['en-US', 'English']],
+  favicon: 'https://user-images.githubusercontent.com/17901361/105580156-a8640600-5dc5-11eb-9cf8-de14475a9d03.png',
+  logo: 'https://user-images.githubusercontent.com/17901361/105580131-8cf8fb00-5dc5-11eb-9d3a-724dda82df58.png',
   outputPath: 'docs-dist',
   mode: 'site',
   hash: true,
