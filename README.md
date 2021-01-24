@@ -1,3 +1,3 @@
 # Learning Rxjs
 
-[Online](https://git.olivewind.com/learning-rxjs/#/)
+[Online](https://git.liguo.run/learning-rxjs)
