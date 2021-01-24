@@ -28,7 +28,7 @@ import { Observable, Subscription } from "rxjs";
 // 创建一个流，每 1 秒钟发射一个值，到第 5 秒结束
 const observable = new Observable<number>((subscriber) => {
   // 注意这条日志只会在产生订阅的时候才会打印
-  console.log("stream created");
+  console.log("observable created");
   let count = 0;
   subscriber.next(count);
   const timer = setInterval(() => {
@@ -95,7 +95,7 @@ export default class Demo extends React.Component<{}, { num: number }> {
 
 在体验过上面这个示例之后我们目前可以得出几个结论
 
-1. Observable 是可以多次发射值的，而在 Promise 中无法做到的，这也是两者最根本的区别
+1. Observable 是可以多次发射值的，这在 Promise A+ 规范中无法做到，这也是两者最根本的区别
 
    ```typescript
    const promise = new Promise((resolve) => {
@@ -110,7 +110,7 @@ export default class Demo extends React.Component<{}, { num: number }> {
 
    
 
-3. Observable 是懒惰计算的，也就是如果没有订阅者，它不会有任何副作用，而 Promise 一旦创建就开始计算
+3. Observable 是懒惰计算的，也就是如果没有消费者，它不会有任何副作用，而 Promise 一旦创建就开始计算
 
    ```typescript
    const promise = new Promise(() => {
@@ -119,13 +119,10 @@ export default class Demo extends React.Component<{}, { num: number }> {
    });
    ```
 
-OK，知道这些就足够了，其它区别我们之后慢慢再说。
-
-
-
+OK，到目前为止知道这些就足够了，其它区别我们之后慢慢再说。
 
 
 #### 思考：
 
-1. 如何像 Rxjs 一样去取消一个 pending 状态的 Promise 呢？🤔 （可以想想 axios 是怎么实现取消 promise 的？）
+1. 如何像 Rxjs 一样去取消一个 pending 状态的 Promise 呢？🤔 （可以想想 axios 是怎么实现取消 Promise 的？）
 
