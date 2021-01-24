@@ -6,7 +6,7 @@ nav:
   order: 0
 group:
   path: /stream
-  title: 第一步：创建流
+  title: 第 1 步：创建流
   order: 1
 ---
 

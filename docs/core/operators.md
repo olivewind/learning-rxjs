@@ -1,5 +1,5 @@
 ---
-title: 第二步：管理流
+title: 第 2 步：编排流
 nav:
   path: /core
   title: 核心概念
@@ -7,7 +7,7 @@ nav:
 order: 2
 ---
 
-## 第二步：管理流
+## 第二步：编排流
 
 ```tsx
 import React from 'react';

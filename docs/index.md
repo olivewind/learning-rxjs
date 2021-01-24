@@ -33,7 +33,7 @@ hero:
 
 我对待 Angular、Rxjs、Ramda 等工具的态度是一样的，尽管它们在国内不是很热门，但它们提供的架构思想和编程范式是超前的，因此仍然有学习它们的必要，掌握它们可以让你拥有轻松处理复杂问题的自信。
 
-遗憾的是这些工具对新手都算不上友好，尤其是一眼看过去的数百个 API 可能会让新手感到非常无力，其中 Rxjs 的资料更是少之又少，市面上已有的一些文档又大多“老破旧”。我希望以某种轻松且简单的方式跟大家分享这些看起来<del>看起来很复杂</del>的技术，因此我动笔写了两本书：
+遗憾的是这些工具对新手都算不上友好，尤其是一眼看过去的数百个 API 可能会让新手感到非常无力，其中 Rxjs 的资料更是少之又少，市面上已有的一些文档又大多“老破旧”。我希望以某种轻松且简单的方式跟大家分享这些“看起来很复杂”的技术，因此我动笔写了两本书：
 
 1. [《领略 Rxjs 之美》](./)，也就是本书
 2. [《领略 Angular 之美》](https://github.com/olivewind/angular-deep)
@@ -57,7 +57,7 @@ hero:
 
 
 你可以通过以下方式联系到我：
-* Github：[olivewind](https://github.com/olivewind)
+* GitHub：[olivewind](https://github.com/olivewind)
 * 知乎：[王力国](https://www.zhihu.com/people/san-huan-mei-you-shao)
 * 邮箱：olivewind.wang@gmail.com
 
