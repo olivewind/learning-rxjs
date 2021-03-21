@@ -1,116 +1,48 @@
 ---
-title: Observable
+title: 第 1 步：创建流
 nav:
   path: /core
-  title: 核心概念
+  title: observable
   order: 0
-group:
-  path: /stream
-  title: 第 1 步：创建流
-  order: 1
+order: 2
 ---
 
-## Observable
+## 第 1 步：创建流
 
-<Alert type="warning">
-  为了演示方便，请重点关注 Rxjs 部分代码，暂时忽略 React 组件“纯不纯”的问题，哈哈哈
-</Alert>
+使用 `Observable` 创建一个 Rxjs 流非常简单，乍一眼看过去就像创建一个 `Promise` 一样
 
-实际上创建一个 Rxjs 流非常简单，乍一眼看过去就像创建一个 `Promise` 一样
+```ts
+import { Observable } from "rxjs";
 
-```tsx
-/**
- * defaultShowCode: true
- */
-import React from "react";
-import { Observable, Subscription } from "rxjs";
-
-// 创建一个流，每 1 秒钟发射一个值，到第 5 秒结束
-const observable = new Observable<number>((subscriber) => {
+const stream$ = new Observable((subscriber) => {
   // 注意这条日志只会在产生订阅的时候才会打印
   console.log("observable created");
-  let count = 0;
-  subscriber.next(count);
-  const timer = setInterval(() => {
-    count += 1;
-    // 你可以人为制造一个错误
-    // subscriber.error();
-    subscriber.next(count);
-    if (count === 5) {
-      clearInterval(timer);
-      subscriber.complete();
-    }
-  }, 1000);
+  subscriber.next(1);
+  subscriber.next(2);
+  setTimeout(() => {
+    subscriber.next(3);
+    subscriber.complete();
+  }, 2000);
 });
 
-export default class Demo extends React.Component<{}, { num: number }> {
-  subscription: Subscription;
-  constructor(props) {
-    super(props);
-    this.state = {
-      num: -1
-    };
-  }
-
-  onStop = () => {
-    this.subscription?.unsubscribe();
-  };
-
-  onStart = () => {
-    this.onStop();
-    this.subscription = observable.subscribe(
-      (num) => {
-        console.log("订阅到数据", num);
-        this.setState({
-          num
-        });
-      },
-      () => {
-        console.error("error");
-      },
-      () => {
-        console.log("complete");
-      }
-    );
-  };
-
-  // 组件销毁时候取消订阅
-  componentWillUnmount() {
-    this.onStop();
-  }
-
-  render() {
-    return (
-      <div>
-        <h2>{this.state.num}</h2>
-        <button onClick={this.onStart}>开始订阅</button>
-        <br />
-        <br />
-        <button onClick={this.onStop}>取消订阅</button>
-      </div>
-    );
-  }
-}
+stream$.subscribe((num) => {
+  console.log("订阅到数据", num);
+});
 ```
 
 在体验过上面这个示例之后我们目前可以得出几个结论
 
-1. Observable 是可以多次发射值的，这在 Promise A+ 规范中无法做到，这也是两者最根本的区别
+1. `Observable 是可以多次发射值的`，这在 Promise A+ 规范中无法做到，这也是两者最根本的区别
 
    ```typescript
    const promise = new Promise((resolve) => {
-     // 这里会立刻执行
      resolve(1);
      // 第二条永远不会推送成功
      resolve(2);
    });
    ```
-
-2. Observable 的发射过程是可以被终止，只需要调用 `subscription.unsubscribe()`
-
    
-
-3. Observable 是懒惰计算的，也就是如果没有消费者，它不会有任何副作用，而 Promise 一旦创建就开始计算
+3. `Observable 是懒惰计算的`，如果没有消费者，它不会有任何副作用，而 Promise 一旦创建就开始计算
 
    ```typescript
    const promise = new Promise(() => {
@@ -119,10 +51,5 @@ export default class Demo extends React.Component<{}, { num: number }> {
    });
    ```
 
-OK，到目前为止知道这些就足够了，其它区别我们之后慢慢再说。
-
-
-#### 思考：
-
-1. 如何像 Rxjs 一样去取消一个 pending 状态的 Promise 呢？🤔 （可以想想 axios 是怎么实现取消 Promise 的？）
+OK，你已经知道如何创建一个简单的流了，下一步我们学习如何[编排流](/core/operators)。
 
