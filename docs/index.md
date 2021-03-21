@@ -1,5 +1,5 @@
 ---
-hero: 
+hero:
   title: 领略 Rxjs 之美
   desc: 为简化 Rxjs 学习曲线而生
   actions:
@@ -41,28 +41,33 @@ hero:
 
 -->
 
+### 镜像地址
+
+- https://git.liguo.run/learning-rxjs
+- http://olivewind.gitee.io/learning-rxjs
+
 ### 适用读者
 
-* 想要学习响应式编程的开发者
-* 想要学习函数式编程的开发者
-* 正在被复杂数据流困扰的开发者
-* 其它对 Rxjs 感兴趣的开发者
-
+- 想要学习响应式编程的开发者
+- 想要学习函数式编程的开发者
+- 正在被复杂数据流困扰的开发者
+- 其它对 Rxjs 感兴趣的开发者
 
 ### 基本约定
-* 本书长期同步 Rxjs 版本（目前是 6.x）
-* 本书示例使用 React + TS + Rxjs 编写，涉及 React 和 TS 内容较少，可不必担心
-* 受限于能力水平，如遇错误请在 [Issue](https://github.com/olivewind/learning-rxjs/issues/new) 中提出，我将在第一时间更正
+
+- 本书长期同步 Rxjs 版本（目前是 6.x）
+- 本书示例使用 React + TS + Rxjs 编写，涉及 React 和 TS 内容较少，可不必担心
+- 受限于能力水平，如遇错误请在 [Issue](https://github.com/olivewind/learning-rxjs/issues/new) 中提出，我将在第一时间更正
 
 ### 关于作者
 
 王力国，一名常年居住在上海的软件工程师，目前效力于人工智能公司 [DataGrand（达观数据）](http://www.datagrand.com/) 。
 
-
 你可以通过以下方式联系到我：
-* GitHub：[olivewind](https://github.com/olivewind)
-* 知乎：[王力国](https://www.zhihu.com/people/san-huan-mei-you-shao)
-* 邮箱：olivewind.wang@gmail.com
+
+- GitHub：[olivewind](https://github.com/olivewind)
+- 知乎：[王力国](https://www.zhihu.com/people/san-huan-mei-you-shao)
+- 邮箱：olivewind.wang@gmail.com
 
 <br/>
 <br/>
