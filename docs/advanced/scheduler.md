@@ -3,7 +3,7 @@ title: Scheduler
 nav:
   path: /advanced
   title: 高级用法
-  order: 2
+  order: 4
 ---
 
 ## Scheduler
@@ -12,8 +12,6 @@ nav:
 import React from 'react';
 
 export default () => {
-  return (
-    <div>Audit</div>
-  )
-}
+  return <div>Audit</div>;
+};
 ```

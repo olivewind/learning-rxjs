@@ -1,14 +1,10 @@
 ---
 title: 数据流
 defaultShowCode: true
-nav:
-  path: /core
-  title: 核心概念
-  order: 0
 group:
   path: /basic
   title: 第 0 步：认识概念
-  order: 0
+  order: 1
 ---
 
 ## 数据流
@@ -52,9 +48,8 @@ group:
 
   聪明的同学知道应该怎么做了，其实只需要通过 monkey pacth 的方式代理以上这些所有方法就可以监测到应用何时需要做变更检测了，换句话说可以做到“在可能需要变更视图的时候启动变更检测”，而这一切在 Angular 中由 [Zone.js](https://github.com/angular/angular/tree/master/packages/zone.js/) 实现。
 
-  --> 
+  -->
 
 在 MVVM 模式大行其道的年代，核心是 View <-> ViewModel <-> Model 之间的数据流转，如果我们使用传统的编程思维来构建应用，有可能会很棘手，比如下面这个例子
 
-​	“一个输入框，输入的时候同时发起 2 个请求，哪个请求先回来就用哪个，为了保证性能需要加上节流”
-
+​ “一个输入框，输入的时候同时发起 2 个请求，哪个请求先回来就用哪个，为了保证性能需要加上节流”

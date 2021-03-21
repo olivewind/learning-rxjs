@@ -1,9 +1,5 @@
 ---
 title: 第 2 步：编排流
-nav:
-  path: /core
-  title: 核心概念
-  order: 0
 order: 2
 ---
 
@@ -18,15 +14,15 @@ order: 2
 3. 去除掉能够被 4 整除的推送
 
 ```typescript
-import { interval } from "rxjs";
-import { map, filter } from "rxjs/operators";
+import { interval } from 'rxjs';
+import { map, filter } from 'rxjs/operators';
 
 const stream$ = interval(1000).pipe(
-  map((v) => v * 10),
-  filter((v) => v % 4 !== 0)
+  map(v => v * 10),
+  filter(v => v % 4 !== 0),
 );
 
-stream$.subscribe((num) => {
+stream$.subscribe(num => {
   console.log(num);
 });
 ```
@@ -36,14 +32,12 @@ stream$.subscribe((num) => {
 用大白话说就是`"顺序执行，并把上一个函数的出参作为下一个函数的入参数"`：
 
 ```typescript
-pipe(a, b, c)
+pipe(a, b, c);
 // 等价于
-c(b(a(args)))
+c(b(a(args)));
 ```
 
 那么在上面这个例子中的执行过程可以理解为：`先执行 map，将结果传入 filter`
-
-
 
 <Alert type="info">
 
@@ -51,7 +45,4 @@ c(b(a(args)))
 
 </Alert>
 
-
-
 没了，就这么简单，ok，现在我们已经编排出一个可用的流的，下一步我们学习如何[订阅流](/core/subscription)。
-
