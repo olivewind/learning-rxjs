@@ -87,4 +87,4 @@ order: 3
    stream$.complete();
    ```
 
-ok，到现在为止，你已经了解入门了 Rxjs，现在让我们开始深入学习[数据流的创建](/streams/observable)。
+ok，到现在为止，你已经了解入门了 RxJS，现在让我们开始深入学习[数据流的创建](/streams/observable)。

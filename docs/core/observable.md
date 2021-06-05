@@ -9,14 +9,14 @@ order: 2
 
 ## 第 1 步：创建流
 
-使用 `Observable` 创建一个 Rxjs 流非常简单，乍一眼看过去就像创建一个 `Promise` 一样
+使用 `Observable` 创建一个 RxJS 流非常简单，乍一眼看过去就像创建一个 `Promise` 一样
 
 ```ts
 import { Observable } from 'rxjs';
-
+console.log('before');
 const stream$ = new Observable(subscriber => {
   // 注意这条日志只会在产生订阅的时候才会打印
-  console.log('observable created');
+  console.log('created');
   subscriber.next(1);
   subscriber.next(2);
   setTimeout(() => {
@@ -24,15 +24,23 @@ const stream$ = new Observable(subscriber => {
     subscriber.complete();
   }, 2000);
 });
+console.log('after');
 
 stream$.subscribe(num => {
   console.log('订阅到数据', num);
 });
+
+// before
+// after
+// created
+// 订阅到数据 1
+// 订阅到数据 2
+// 订阅到数据 3
 ```
 
 在体验过上面这个示例之后我们目前可以得出几个结论
 
-1. `Observable 是可以多次发射值的`，这在 Promise A+ 规范中无法做到，这也是两者最根本的区别
+1. `Observable 是可以多次发射值的`，这在 [Promise A+](https://promisesaplus.com/) 规范中无法做到，这也是两者最根本的区别
 
    ```typescript
    const promise = new Promise(resolve => {

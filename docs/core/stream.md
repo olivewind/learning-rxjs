@@ -1,5 +1,5 @@
 ---
-title: 数据流
+title: 可观察对象
 defaultShowCode: true
 group:
   path: /basic
@@ -7,49 +7,43 @@ group:
   order: 1
 ---
 
-## 数据流
+## 可观察对象
 
-<!-- 
+通常我们的数据获取方式可以归类为两大类即“拉”和“推”，“拉”和“推”描述了两种生产者和消费者的协作模式。
 
-在讨论数据流之前我特别想要跟大家先探讨几个问题
+**什么是“拉”？**
 
-* React 中视图变更的时机是什么时候？
+在“拉”模式中，消费者决定何时从生产者处获取数据，生产者并不知何时将数据交付给消费者，在 Javascript 中，`函数`和`迭代器`都是“拉”的实现方式。
 
-  这题简单，众所周知 setState ->  diff -> render，因此时机是在执行 setState 的时候（这里不细究同步异步）。
+“拉”就意味着代码是面向过程的，我需要什么数据我就去“拉”一下，需要几次我就去拉几次，需要把拉的时机时序等控制逻辑需要下沉到消费者，在简单的同步场景下这没有问题。但在复杂或异步场景下会变得捉襟见肘，此时你需要选择“推”模式。
 
-* Vue 中视图变更的时机是什么时候？
+**什么是“推”？**
 
-  这题也简单，Vue 2 使用 Object.defineProperty，Vue3 使用 Prxoy 代理数据并做依赖收集，只需要变更数据就可以触发视图变更。
+在“推”模式中，生产者决定何时向消费者发送数据，消费者不知道何时会收到该数据，在 JavaScript 中，`Promise`是最常见的实现方式，现在 RxJS 引入了一种全新的“推”的实现方式`Observable`，它是多个值的生成者，并将值有序地“推”给消费者。
 
-* Angular 中视图变更的时机是什么时候？
+|        | 生产者                           | 消费者                           |
+| :----- | :------------------------------- | :------------------------------- |
+| **拉** | `被动`：在请求时产生数据。       | `主动`：决定何时请求数据。       |
+| **推** | `主动`：按照自己的节奏生成数据。 | `被动`：对接收到的数据做出反应。 |
 
-  ```typescript
-  @Component({
-    selector: 'app-click-me',
-    template: `
-      <button (click)="onClickMe()">Click me!</button>
-      {{clickMessage}}`
-  })
-  export class ClickMeComponent {
-    clickMessage = '';
-  
-    onClickMe() {
-      // 为啥这样就可以直接触发视图更新了？？？这是什么魔法？？？
-      this.clickMessage = 'You are my hero!';
-    }
-  }
-  ```
+在 RxJS 的世界中，`Observable` 是非常重要的概念，我们称它为可观察对象，它可以较好弥补我们常规“推”数据方式的不足：
 
-  很多人都知道 Angular 内部有一套“变更检测”系统，可大部分人都不知道它是怎么工作。其实这背后也没有什么魔法，大家抛开框架仔细想一想在一个前端应用的全生命周期中有哪些时机是需要“变更检测”呢？其实总结来说只有三类：
+1. Promise 无法惰性求值
+2. Promise 无法多次推送
+3. Promise 无法取消
+4. Promise 无法重试
+5. ...
 
-  1. 用户事件，比如 click，blur，mousemove...
-  2. 数据交互，比如 ajax，fetch，websocket...
-  3. 异步事件，比如 setTimeout，setInterval，Promise...
+RxJS 弥补了 Promise 的缺陷并提供了大量强大的特性
 
-  聪明的同学知道应该怎么做了，其实只需要通过 monkey pacth 的方式代理以上这些所有方法就可以监测到应用何时需要做变更检测了，换句话说可以做到“在可能需要变更视图的时候启动变更检测”，而这一切在 Angular 中由 [Zone.js](https://github.com/angular/angular/tree/master/packages/zone.js/) 实现。
+![img](/images/01.png)
 
-  -->
+不过目前为止你只需要知道这些就够了。
 
-在 MVVM 模式大行其道的年代，核心是 View <-> ViewModel <-> Model 之间的数据流转，如果我们使用传统的编程思维来构建应用，有可能会很棘手，比如下面这个例子
+<br/>
 
-​ “一个输入框，输入的时候同时发起 2 个请求，哪个请求先回来就用哪个，为了保证性能需要加上节流”
+参考资料：
+
+https://rxjs.dev/guide/observable
+
+https://stackoverflow.com/questions/37364973/what-is-the-difference-between-promises-and-observables/37365955#37365955
