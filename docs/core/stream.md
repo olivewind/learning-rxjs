@@ -13,13 +13,13 @@ group:
 
 **什么是“拉”？**
 
-在“拉”模式中，消费者决定何时从生产者处获取数据，生产者并不知何时将数据交付给消费者，在 Javascript 中，`函数`和`迭代器`都是“拉”的实现方式。
+在“拉”模式中，消费者决定何时从生产者处获取数据，生产者并不知何时将数据交付给消费者，在 JavaScript 中，`函数`和`迭代器`都是“拉”模式的典型代表。
 
 “拉”就意味着代码是面向过程的，我需要什么数据我就去“拉”一下，需要几次我就去拉几次，需要把拉的时机时序等控制逻辑需要下沉到消费者，在简单的同步场景下这没有问题。但在复杂或异步场景下会变得捉襟见肘，此时你需要选择“推”模式。
 
 **什么是“推”？**
 
-在“推”模式中，生产者决定何时向消费者发送数据，消费者不知道何时会收到该数据，在 JavaScript 中，`Promise`是最常见的实现方式，现在 RxJS 引入了一种全新的“推”的实现方式`Observable`，它是多个值的生成者，并将值有序地“推”给消费者。
+在“推”模式中，生产者决定何时向消费者发送数据，消费者不知道何时会收到该数据，在 JavaScript 中，`Promise`是常见的“推”模式，现在 RxJS 引入了一种全新的“推”的实现方式`Observable`，它是多个值的生产者，并将值有序地“推”给消费者。
 
 |        | 生产者                           | 消费者                           |
 | :----- | :------------------------------- | :------------------------------- |
@@ -34,11 +34,11 @@ group:
 4. Promise 无法重试
 5. ...
 
-RxJS 弥补了 Promise 的缺陷并提供了大量强大的特性
+RxJS 弥补了 JavaScript 各种“推”“拉”模式 API 的缺陷并提供一种更强大的编程范式-“响应式编程”，如下图所示，RxJS 更像是一条长长的数据流。
 
 ![img](/images/01.png)
 
-不过目前为止你只需要知道这些就够了。
+相信到现在你应该有些晕了，不过没有关系，这是正常的，学习 RxJS 确实是对以往编程习惯的一种挑战。不过在随后的一步步学习中你将会逐渐清晰并爱上 RxJS，现在我们先去[创建一条简单的流](/core/observable)体验下。
 
 <br/>
 
@@ -46,4 +46,4 @@ RxJS 弥补了 Promise 的缺陷并提供了大量强大的特性
 
 https://rxjs.dev/guide/observable
 
-https://stackoverflow.com/questions/37364973/what-is-the-difference-between-promises-and-observables/37365955#37365955
+[What is the difference between Promises and Observables?](https://stackoverflow.com/questions/37364973/what-is-the-difference-between-promises-and-observables/37365955#37365955)

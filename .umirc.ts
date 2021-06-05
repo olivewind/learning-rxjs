@@ -6,16 +6,24 @@ export default defineConfig({
     ['zh-CN', '中文'],
     ['en-US', 'English'],
   ],
-  favicon:
-    'https://user-images.githubusercontent.com/17901361/105580156-a8640600-5dc5-11eb-9cf8-de14475a9d03.png',
-  logo:
-    'https://user-images.githubusercontent.com/17901361/105580131-8cf8fb00-5dc5-11eb-9d3a-724dda82df58.png',
+  favicon: './logo.png',
+  logo: './logo.png',
   outputPath: 'docs-dist',
   mode: 'site',
   hash: true,
   history: {
     type: 'hash',
   },
+  metas: [
+    {
+      name: 'keywords',
+      content: 'Rxjs,rxjs,文档,教程',
+    },
+    {
+      name: 'description',
+      content: 'RxJS教程,中文文档,使用教程,使用指南',
+    },
+  ],
   base: '/',
   publicPath: process.env.NODE_ENV === 'production' ? '/learning-rxjs/' : '/',
   navs: [

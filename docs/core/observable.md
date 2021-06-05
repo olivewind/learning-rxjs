@@ -13,7 +13,9 @@ order: 2
 
 ```ts
 import { Observable } from 'rxjs';
+
 console.log('before');
+
 const stream$ = new Observable(subscriber => {
   // 注意这条日志只会在产生订阅的时候才会打印
   console.log('created');
@@ -24,6 +26,7 @@ const stream$ = new Observable(subscriber => {
     subscriber.complete();
   }, 2000);
 });
+
 console.log('after');
 
 stream$.subscribe(num => {
