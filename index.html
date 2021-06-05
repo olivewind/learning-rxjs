@@ -11,17 +11,28 @@
       type="image/x-icon"
       href="https://user-images.githubusercontent.com/17901361/105580156-a8640600-5dc5-11eb-9cf8-de14475a9d03.png"
     />
-    <link rel="stylesheet" href="/learning-rxjs/umi.9e127424.css" />
+    <link rel="stylesheet" href="/learning-rxjs/umi.5cbb3d0a.css" />
     <script>
       window.routerBase = "/";
     </script>
     <script>
       //! umi version: 3.3.7
     </script>
+    <script>
+      !(function () {
+        var e = localStorage.getItem("dumi:prefers-color"),
+          t = window.matchMedia("(prefers-color-scheme: dark)").matches,
+          r = ["light", "dark", "auto"];
+        document.documentElement.setAttribute(
+          "data-prefers-color",
+          e === r[2] ? (t ? r[1] : r[0]) : r.includes(e) ? e : r[0]
+        );
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
 
-    <script src="/learning-rxjs/umi.936409c5.js"></script>
+    <script src="/learning-rxjs/umi.209f6b1a.js"></script>
   </body>
 </html>
