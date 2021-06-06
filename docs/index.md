@@ -7,11 +7,6 @@ hero:
       link: /core/stream
 ---
 
-### 镜像地址
-
-- https://git.liguo.run/learning-rxjs
-- http://olivewind.gitee.io/learning-rxjs
-
 ### 适用读者
 
 - 想要学习响应式编程的开发者

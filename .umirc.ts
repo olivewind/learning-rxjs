@@ -32,6 +32,10 @@ export default defineConfig({
       title: 'GitHub',
       path: 'https://github.com/olivewind/learning-rxjs',
     },
+    {
+      title: '国内镜像',
+      path: 'http://olivewind.gitee.io/learning-rxjs/#/',
+    },
   ],
   // more config: https://d.umijs.org/config
 });
