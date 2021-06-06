@@ -5,12 +5,12 @@ order: 3
 
 ## 第 3 步：订阅流
 
-#### 方法一
+##### 方法一
 
 ```typescript
-import { of } from 'rxjs';
+import { interval } from 'rxjs';
 
-const stream$ = of(1, 2, 3);
+const stream$ = interval(2000);
 
 stream$.subscribe(
   data => {
@@ -23,14 +23,19 @@ stream$.subscribe(
     console.log('方法一：结束');
   },
 );
+
+// 错误和结束并不是必需的，换句话说如果你只想处理正常推送的数据你可以进一步简化代码
+stream$.subscribe(data => {
+  console.log('方法一：数据', data);
+});
 ```
 
-#### 方法二
+##### 方法二
 
 ```typescript
-import { of } from 'rxjs';
+import { interval } from 'rxjs';
 
-const stream$ = of(1, 2, 3);
+const stream$ = interval(2000);
 
 stream$.subscribe({
   next(data) {
@@ -45,10 +50,4 @@ stream$.subscribe({
 });
 ```
 
-<Alert type="info">
-
-请务必在合适的时机结束流或者取消订阅（通常是组件销毁的时候），否则非常容易出现内存泄漏，很多新手会犯这种错误，
-
-</Alert>
-
-现在你已经学会如何订阅流了，下一步我们学习如何[结束流](/core/unsubscribe)。
+现在你已经学会如何订阅流了，但如果只订阅而不在合适的时机取消订阅的话非常容易出现内存泄漏（常见在组件销毁的时候忘记取消订阅），下一步我们学习如何[结束流](/core/unsubscribe)。

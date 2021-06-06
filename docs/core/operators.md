@@ -17,10 +17,11 @@ order: 2
 import { interval } from 'rxjs';
 import { map, filter } from 'rxjs/operators';
 
-const stream$ = interval(1000).pipe(
-  map(v => v * 10),
-  filter(v => v % 4 !== 0),
-);
+const stream$ = interval(1000) // 创建一个每秒钟推送一次的流
+  .pipe(
+    map(v => v * 10), // 将每次推送的数据乘于 10
+    filter(v => v % 4 !== 0), // 去除掉能够被 4 整除的推送
+  );
 
 stream$.subscribe(num => {
   console.log(num);
@@ -34,9 +35,9 @@ stream$.subscribe(num => {
 // ...
 ```
 
-#### 什么是 pipe？
+##### 什么是 pipe？
 
-用大白话说就是`"顺序执行，并把上一个函数的出参作为下一个函数的入参数"`：
+用大白话说就是`"顺序执行，并把上一个函数的出参作为下一个函数的入参"`
 
 ```typescript
 pipe(a, b, c);
@@ -45,11 +46,5 @@ c(b(a(args)));
 ```
 
 那么在上面这个例子中的执行过程可以理解为：`先执行 map，将结果传入 filter`
-
-<Alert type="info">
-
-如何你了解函数式编程的话，那么你应该会觉得很自然，实际上这就是 `compose` 的倒序版
-
-</Alert>
 
 没了，就这么简单，ok，现在我们已经编排出一个可用的流的，下一步我们学习如何[订阅流](/core/subscription)。

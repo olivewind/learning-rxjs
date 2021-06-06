@@ -43,7 +43,7 @@ stream$.subscribe(num => {
 
 在体验过上面这个示例之后我们目前可以得出几个结论
 
-1. `Observable 是可以多次发射值的`，这在 [Promise A+](https://promisesaplus.com/) 规范中无法做到，这也是两者最根本的区别
+1. `Observable 是可以多次发射值的`，这在 [Promise A+](https://promisesaplus.com/) 规范中无法做到，这也是两者非常重要的一个区别
 
    ```typescript
    const promise = new Promise(resolve => {

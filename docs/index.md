@@ -4,7 +4,7 @@ hero:
   desc: 为简化 RxJS 学习曲线而生
   actions:
     - text: 进入 RxJS 的世界
-      link: /core/basic/stream
+      link: /core/stream
 ---
 
 ### 镜像地址
@@ -37,4 +37,4 @@ hero:
 
 <br/>
 
-从现在开始，跟我一起进入[RxJS 的世界 🎉 🎉 🎉](./core/basic/stream)
+从现在开始，跟我一起进入[RxJS 的世界 🎉 🎉 🎉](./core/stream)

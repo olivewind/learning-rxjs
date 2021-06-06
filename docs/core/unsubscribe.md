@@ -12,42 +12,43 @@ order: 3
 1. 编程式取消订阅：
 
    ```typescript
-   import { interval, Subscription } from 'rxjs';
+   import { interval } from 'rxjs';
 
    const stream$ = interval(1000);
 
    // 产生订阅
-   this.subscription = stream$.subscribe(num => {
+   const subscription = stream$.subscribe(num => {
      console.log(num);
    });
 
    //取消订阅
-   this.subscription?.unsubscribe();
+   subscription.unsubscribe();
    ```
 
-   在遇到多个流时候可以组合 `Subscription`
+   可以组合多个 `Subscription` 统一取消
 
    ```typescript
    import { interval, Subscription } from 'rxjs';
 
    const subscription = new Subscription();
-   const stream1$ = interval(1000);
-   const stream2$ = interval(1000);
+   const stream$ = interval(1000);
 
-   // 产生多个订阅
-   this.subscription.add(
-     stream1$.subscribe(num1 => {
+   // 产生订阅
+   subscription.add(
+     stream$.subscribe(num1 => {
        console.log(num1);
      }),
    );
-   this.subscription.add(
-     stream2$.subscribe(num2 => {
+
+   // 产生订阅
+   subscription.add(
+     stream$.subscribe(num2 => {
        console.log(num2);
      }),
    );
 
-   //取消订阅
-   this.subscription?.unsubscribe();
+   // 统一取消订阅
+   subscription.unsubscribe();
    ```
 
 2. 声明式取消订阅：
@@ -87,4 +88,4 @@ order: 3
    stream$.complete();
    ```
 
-ok，到现在为止，你已经了解入门了 RxJS，现在让我们开始深入学习[数据流的创建](/streams/observable)。
+ok，到现在为止，你已经了解入门了 RxJS，现在让我们开始学习一些实用的[数据流创建](/streams/start)。
