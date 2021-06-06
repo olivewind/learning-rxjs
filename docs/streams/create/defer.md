@@ -1,10 +1,10 @@
 ---
 title: defer
-order: 14
+order: 7
 group:
   path: /create
   title: 创建流
-  order: 6
+  order: 1
 ---
 
 # defer
@@ -26,19 +26,19 @@ defer<R extends ObservableInput<any>>(observableFactory: () => R): Observable<Ob
 ```ts
 import { defer, of } from 'rxjs';
 
-let flag = 0;
+let signal = 0;
 
-const flag$ = defer(() => {
-  return flag === 0 ? of(0) : of(1);
+const number$ = defer(() => {
+  return signal === 0 ? of(0) : of(1);
 });
 
-flag = 0;
+signal = 0;
 
-flag$.subscribe(x => console.log(x)); // 0
+number$.subscribe(x => console.log(x)); // 0
 
-flag = 1;
+signal = 1;
 
-flag$.subscribe(x => console.log(x)); // 1
+number$.subscribe(x => console.log(x)); // 1
 ```
 
 <br/>
