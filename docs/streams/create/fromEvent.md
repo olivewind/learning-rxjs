@@ -29,11 +29,13 @@ interface EventListenerOptions {
 
 ![fromEvent](./images/fromEvent.png)
 
-fromEvent 支持以下几种类型的事件目标：
+`fromEvent` 接受事件目标作为第一个参数，它是一个具有注册事件处理函数方法的对象。事件类型的字符串作为第二个参数。`fromEvent` 支持以下几种类型的可监听对象：
 
 1. DOM 风格：具有 `addEventListener` 和 `removeEventListener`方法的对象。
 2. Nodejs EventEmitter 风格：具有 `addListener` 和 `removeListener` 方法的对象。
 3. JQuery 风格：具有 `on` 和 `off`方法的对象。
+
+除此之外如果你想实现其它非标准自定义事件目标，你可以使用可扩展性更强的 [fromEventPattern](/streams/create/from-event)。
 
 值得一提的是实际上 RxJS 是通过 [duck typing](https://zh.wikipedia.org/zh-hans/%E9%B8%AD%E5%AD%90%E7%B1%BB%E5%9E%8B) 检测的，也就是说只要你的对象实现了对应接口就可以被 fromEvent 接受，这一点在源码中可以很容易看出
 
