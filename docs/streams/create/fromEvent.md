@@ -29,7 +29,7 @@ interface EventListenerOptions {
 
 ![fromEvent](./images/fromEvent.png)
 
-`fromEvent` 接受事件目标作为第一个参数，它是一个具有注册事件处理函数方法的对象。事件类型的字符串作为第二个参数。`fromEvent` 支持以下几种类型的可监听对象：
+`fromEvent` 接受事件目标作为第一个参数，它是一个具有注册事件处理函数方法的对象。事件类型的字符串作为第二个参数。事件监听参数作为第三个可选参数。`fromEvent` 支持以下几种类型的可监听对象：
 
 1. DOM 风格：具有 `addEventListener` 和 `removeEventListener`方法的对象。
 2. Nodejs EventEmitter 风格：具有 `addListener` 和 `removeListener` 方法的对象。
