@@ -18,12 +18,12 @@ bindCallback 是一个将 callback 风格的源函数转换为返回 Observable 
 比如我们现在有一个 callback 风格的函数如下
 
 ```ts
-function getData(message: string, callback: (res: string) => void) {
+function getMessage(message: string, callback: (res: string) => void) {
   callback(`hello ${message}`);
 }
 
 // 常规使用
-getData('world', res => {
+getMessage('world', res => {
   console.log(res);
 });
 ```
@@ -34,9 +34,9 @@ getData('world', res => {
 import { bindCallback } from 'rxjs';
 
 // 转换成 Observable
-const getDataStream = bindCallback(getData);
+const getMessageAsObservable = bindCallback(getMessage);
 
-getDataStream('world').subscribe(res => {
+getMessageAsObservable('world').subscribe(res => {
   console.log(res);
 });
 ```
@@ -44,9 +44,9 @@ getDataStream('world').subscribe(res => {
 值得一提的是这里的 Observable 是惰性求值的，也就是说如果没有产生订阅，源函数是不会执行的
 
 ```typescript
-const getDataStream = bindCallback(getData);
+const getMessageAsObservable = bindCallback(getMessage);
 
-getDataStream('world'); // 没有产生订阅，永远不会执行 getData 函数
+getMessageAsObservable('world'); // 没有产生订阅，永远不会执行 getMessage 函数
 ```
 
 另外需要注意的是，在 callback 函数执行一次之后，Observable 就结束了，也就是说多次执行 callback 是无效的
@@ -54,14 +54,14 @@ getDataStream('world'); // 没有产生订阅，永远不会执行 getData 函�
 ```typescript
 import { bindCallback } from 'rxjs';
 
-function getData(message: string, callback: (res: string) => void) {
+function getMessage(message: string, callback: (res: string) => void) {
   callback(`hello ${message}`);
   callback(`hello ${message}`);
 }
 
-const getDataStream = bindCallback(getData);
+const getMessageAsObservable = bindCallback(getMessage);
 
-getDataStream('world'); // 只会打印一次 hello world
+getMessageAsObservable('world'); // 只会打印一次 hello world
 ```
 
 <br/>
