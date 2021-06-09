@@ -1,6 +1,6 @@
 ---
 title: bindNodeCallback
-order: 13
+order: 12
 group:
   path: /create
   title: 创建流
