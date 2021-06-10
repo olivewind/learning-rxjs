@@ -17,8 +17,10 @@ hero:
 ### 基本约定
 
 - 本书长期同步 RxJS 版本（目前是 7.x）
-- 本书示例使用 TypeScript 编写，涉及知识较少不影响直接阅读
-- 受限于能力水平，如遇错误请在 [Issue](https://github.com/olivewind/learning-rxjs/issues/new) 中提出，我将在第一时间更正
+- 本书示例使用 TypeScript 编写，不影响阅读
+- 受限于能力水平，如遇错误请在 [Issue](https://github.com/olivewind/learning-rxjs/issues/new) 中提出
+
+<!--
 
 ### 关于作者
 
@@ -29,6 +31,8 @@ hero:
 - GitHub：[olivewind](https://github.com/olivewind)
 - 知乎：[王力国](https://www.zhihu.com/people/san-huan-mei-you-shao)
 - 邮箱：olivewind.wang@gmail.com
+
+-->
 
 <br/>
 
