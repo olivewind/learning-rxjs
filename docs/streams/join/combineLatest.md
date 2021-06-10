@@ -59,8 +59,8 @@ const b$ = new Observable(subscriber => {
   }, 6000);
 
   setTimeout(() => {
-    subscriber.next(8);
-  }, 9000);
+    subscriber.next(7);
+  }, 8000);
 });
 
 combineLatest([a$, b$]).subscribe(x => {
@@ -72,7 +72,7 @@ combineLatest([a$, b$]).subscribe(x => {
 // [2, 5]
 // [3, 5]
 // [3, 6]
-// [3, 8]
+// [3, 7]
 ```
 
 上面这个例子的弹珠图如下
