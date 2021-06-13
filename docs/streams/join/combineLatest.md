@@ -63,7 +63,9 @@ const b$ = new Observable(subscriber => {
   }, 8000);
 });
 
-combineLatest([a$, b$]).subscribe(x => {
+const output$ = combineLatest([a$, b$]);
+
+output$.subscribe(x => {
   console.log(x);
 });
 
@@ -75,12 +77,10 @@ combineLatest([a$, b$]).subscribe(x => {
 // [3, 7]
 ```
 
-上面这个例子的弹珠图如下
+上面这个例子的[弹珠图](https://swirly.dev/#?code=-1----2----3%7C%20%0Atitle%20=%20a$%20%0A%0A----4----5----6----7%7C%20%0Atitle%20=%20b$%20%0A%0A%3E%20combineLatest%20%0A%0A----a-b--c-d--e----f%7C%20%0Atitle%20=%20output$%0Aa%20:=%20%5B14%5D%20%0Ab%20:=%20%5B24%5D%20%0Ac%20:=%20%5B25%5D%20%0Ad%20:=%20%5B35%5D%20%0Ae%20:=%20%5B36%5D%20%0Af%20:=%20%5B37%5D)如下
 
 ![combineLatest](./images/combineLatest-demo1.png)
 
 参考资料：
 
 - [combineLatest](https://rxjs.dev/api/operators/combineLatest)
-
-- [弹珠图](https://swirly.dev/?code=-1----2----3|%20title%20=%20a$%20----4----5----6----7|%20title%20=%20b$%20%3E%20combineLatest%20----a-b--c-d--e----f|%20title%20=%20output%20a%20:=%20[14]%20b%20:=%20[24]%20c%20:=%20[25]%20d%20:=%20[35]%20e%20:=%20[36]%20f%20:=%20[37])
