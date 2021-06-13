@@ -15,14 +15,14 @@ combineLatest<O extends ObservableInput<any>, R>(...args: any[]): Observable<R> 
 
 ![combineLatest](./images/combineLatest.png)
 
-combineLatest 会将多个数据流最新推送的值按顺序组装成一个组合再推送
+combineLatest 会将多个数据流最新推送的值按顺序组装成一个组合再推送的数据流（output\$）
 
-1. 任意数据流没有推送第一个值，combineLatest 都不会推送值
-2. 只有每个数据流都推送了第一个值，combineLatest 才会发生第一次推送
+1. 任意数据流没有推送第一个值，output\$ 都不会推送值
+2. 只有每个数据流都推送了第一个值，output\$ 才会发生第一次推送
    - 如果某个流提前推送，但是其他数据流还没推送，那么该提前推送的流将只会保留最新的一个值
 3. 任意一个数据流发生错误，都会导致其他流结束
-4. 所有数据流结束，combineLatest 则结束
-5. 如果某个数据流未推送值而直接结束，combineLatest 则立刻结束
+4. 所有数据流结束，output\$ 则结束
+5. 如果某个数据流未推送值而直接结束，output\$ 则立刻结束
 
 ### 使用例子
 
@@ -78,3 +78,9 @@ combineLatest([a$, b$]).subscribe(x => {
 上面这个例子的弹珠图如下
 
 ![combineLatest](./images/combineLatest-demo1.png)
+
+参考资料：
+
+- [combineLatest](https://rxjs.dev/api/operators/combineLatest)
+
+- [弹珠图](https://swirly.dev/?code=-1----2----3|%20title%20=%20a$%20----4----5----6----7|%20title%20=%20b$%20%3E%20combineLatest%20----a-b--c-d--e----f|%20title%20=%20output%20a%20:=%20[14]%20b%20:=%20[24]%20c%20:=%20[25]%20d%20:=%20[35]%20e%20:=%20[36]%20f%20:=%20[37])
