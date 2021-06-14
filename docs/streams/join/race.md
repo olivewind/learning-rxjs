@@ -10,7 +10,17 @@ group:
 # race
 
 ```typescript
-race<T>(...sources: (Observable<T> | InteropObservable<T> | AsyncIterable<T> | PromiseLike<T> | ArrayLike<T> | Iterable<...> | ReadableStreamLike<...> | ObservableInput<...>[])[]): Observable<any>
+race<T>(...sources: (
+  Observable<T> |
+  InteropObservable<T> |
+  AsyncIterable<T> |
+  PromiseLike<T> |
+  ArrayLike<T> |
+  Iterable<...> |
+  ReadableStreamLike<...> |
+  ObservableInput<...>[]
+  )[]
+): Observable<any>
 ```
 
 ![race](./images/race.png)

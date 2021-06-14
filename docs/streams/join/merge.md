@@ -10,7 +10,18 @@ group:
 # merge
 
 ```typescript
-merge(...args: (number | SchedulerLike | Observable<unknown> | InteropObservable<unknown> | AsyncIterable<unknown> | PromiseLike<unknown> | ArrayLike<...> | Iterable<...> | ReadableStreamLike<...>)[]): Observable<unknown>
+merge(...args: (
+  number |
+  SchedulerLike |
+  Observable<unknown> |
+  InteropObservable<unknown> |
+  AsyncIterable<unknown> |
+  PromiseLike<unknown> |
+  ArrayLike<...> |
+  Iterable<...> |
+  ReadableStreamLike<...>
+  )[]
+): Observable<unknown>
 ```
 
 ![merge](./images/merge.png)
