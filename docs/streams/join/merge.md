@@ -15,10 +15,10 @@ merge(...args: (number | SchedulerLike | Observable<unknown> | InteropObservable
 
 ![merge](./images/merge.png)
 
-merge 会将多个数据流合并成一个流（output\$）
+merge 会将多个数据流合并成一个流
 
-1. 任意数据流推送值，output\$ 都会推送值
-2. 只有所有流都完成了，output\$ 才会完成
+1. 任意数据流推送值，merge 都会推送值
+2. 只有所有流都完成了，merge 才会完成
 
 ### 使用例子
 

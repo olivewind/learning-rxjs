@@ -15,10 +15,10 @@ concat(...args: any[]): Observable<unknown>
 
 ![concat](./images/concat.png)
 
-concat 会将多个数据流按照顺序合并成一个流（output\$）
+concat 会将多个数据流按照顺序合并成一个流
 
 1. 上一个流完成了，才会订阅下一个流
-2. 当最后一个流都完成了，output\$ 才会完成
+2. 当最后一个流都完成了，concat 才会完成
 
 ### 使用例子
 
