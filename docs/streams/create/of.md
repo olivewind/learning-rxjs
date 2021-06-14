@@ -9,17 +9,13 @@ group:
 
 # of
 
-<Alert type="info">
-
-将参数转换为可观察序列
-
-</Alert>
-
 ```ts
 of<T>(...args: (SchedulerLike | T)[]): Observable<T>
 ```
 
-![大理石图](./images/of.png)
+![of](./images/of.png)
+
+of 可以将任意值转换为 Observable。
 
 ### 使用例子
 

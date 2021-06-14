@@ -9,15 +9,11 @@ order: 3
 
 # timer
 
-<Alert type="info">
-
-可以理解为是支持指定起始执行时间的 interval
-
-</Alert>
-
 ```ts
 timer(dueTime: number | Date = 0, intervalOrScheduler?: number | SchedulerLike, scheduler: SchedulerLike = asyncScheduler): Observable<number>
 ```
+
+timer 可以理解为是支持指定起始执行时间的 interval。
 
 ### 使用例子
 

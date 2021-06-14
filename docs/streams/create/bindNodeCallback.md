@@ -10,7 +10,11 @@ group:
 # bindNodeCallback
 
 ```ts
-bindNodeCallback(callbackFunc: (args_0: any, args_1: (err: any, ...res: any) => void) => void, resultSelector?: SchedulerLike | ((...args: any[]) => any), scheduler?: SchedulerLike): (...args: any[]) => Observable<any>
+bindNodeCallback(
+  callbackFunc: (args_0: any, args_1: (err: any, ...res: any) => void) => void,
+  resultSelector?: SchedulerLike | ((...args: any[]) => any),
+  scheduler?: SchedulerLike): (...args: any[]
+) => Observable<any>
 ```
 
 它和 [`bindCallback`](/streams/create/bind-callback) 很相似，也是高阶函数，但回调的风格是 `callback(error, result)`，注意几点：

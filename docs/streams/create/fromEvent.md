@@ -9,14 +9,13 @@ group:
 
 # fromEvent
 
-<Alert type="info">
-
-从 DOM 事件、Node.js EventEmitter 事件或其他事件创建一个 Observable
-
-</Alert>
-
 ```ts
-fromEvent<T>(target: any, eventName: string, options?: EventListenerOptions | ((...args: any[]) => T), resultSelector?: (...args: any[]) => T): Observable<T>
+fromEvent<T>(
+  target: any,
+  eventName: string,
+  options?: EventListenerOptions | ((...args: any[]) => T),
+  resultSelector?: (...args: any[]) => T
+): Observable<T>
 ```
 
 ```typescript
@@ -28,6 +27,8 @@ interface EventListenerOptions {
 ```
 
 ![fromEvent](./images/fromEvent.png)
+
+fromEvent 可以从 DOM 事件、Node.js EventEmitter 事件或其他事件创建一个 Observable。
 
 `fromEvent` 接受事件目标作为第一个参数，它是一个具有注册事件处理函数方法的对象。事件类型的字符串作为第二个参数。事件监听参数作为第三个可选参数。`fromEvent` 支持以下几种类型的可监听对象：
 

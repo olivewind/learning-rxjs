@@ -9,17 +9,17 @@ group:
 
 # **fromEventPattern**
 
-<Alert type="info">
-
-从任意可监听事件创建一个 Observable
-
-</Alert>
-
 ```ts
-fromEventPattern<T>(addHandler: (handler: NodeEventHandler) => any, removeHandler?: (handler: NodeEventHandler, signal?: any) => void, resultSelector?: (...args: any[]) => T): Observable<T | T[]>
+fromEventPattern<T>(
+  addHandler: (handler: NodeEventHandler) => any,
+  removeHandler?: (handler: NodeEventHandler, signal?: any) => void,
+  resultSelector?: (...args: any[]) => T
+): Observable<T | T[]>
 ```
 
 ![fromEventPattern](./images/fromEventPattern.png)
+
+fromEventPattern 可以从任意可监听事件创建一个 Observable。
 
 fromEventPattern 接受一个 `addHandler` 事件处理函数作为第一个参数，该函数将被注入事件参数，`addHandler`每当订阅产生时被调用。
 

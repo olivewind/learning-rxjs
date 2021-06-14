@@ -9,17 +9,15 @@ order: 8
 
 # throwError
 
-<Alert type="info">
-
-创建一个 Observable，它将创建一个错误实例，并在订阅后立即将其作为错误推送给消费者。
-
-</Alert>
-
 ```ts
 throwError(errorOrErrorFactory: any, scheduler?: SchedulerLike): Observable<never>
 ```
 
 ![throw marble diagram](./images/throw.png)
+
+throwError 用于创建立刻抛出错误的 Observable。
+
+除非你明确想返回一个 error observable，否者在大多数操作符内部都可以直接按照 JS 语言规范抛错，错误会被 Rxjs 捕获（参考例二）。
 
 ### 使用例子
 
@@ -34,8 +32,6 @@ error$.subscribe({
   error: err => console.log(err.message),
 });
 ```
-
-除非你明确想返回一个 error observable，否者在大多数操作符内部都可以直接按照 JS 语言规范抛错，错误会被 Rxjs 捕获，比如下面这个例子
 
 ```typescript
 import { defer, of, throwError } from 'rxjs';

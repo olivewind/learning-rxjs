@@ -10,7 +10,13 @@ order: 14
 # generate
 
 ```ts
-generate<T, S>(initialStateOrOptions: S | GenerateOptions<T, S>, condition?: ConditionFunc<S>, iterate?: IterateFunc<S>, resultSelectorOrScheduler?: SchedulerLike | ResultFunc<S, T>, scheduler?: SchedulerLike): Observable<T>
+generate<T, S>(
+  initialStateOrOptions: S | GenerateOptions<T, S>,
+  condition?: ConditionFunc<S>,
+  iterate?: IterateFunc<S>,
+  resultSelectorOrScheduler?: SchedulerLike | ResultFunc<S, T>,
+  scheduler?: SchedulerLike
+): Observable<T>
 ```
 
 generater 可以通过运行产生序列元素的状态驱动循环来生成可观察序列，它接受至少 3 个参数：

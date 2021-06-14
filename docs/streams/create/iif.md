@@ -9,15 +9,15 @@ order: 6
 
 # iif
 
-<Alert type="info">
-
-在订阅时检查条件函数返回值以确定使用哪个数据源
-
-</Alert>
-
 ```ts
-iif<T, F>(condition: () => boolean, trueResult: ObservableInput<T>, falseResult: ObservableInput<F>): Observable<T | F>
+iif<T, F>(
+  condition: () => boolean,
+  trueResult: ObservableInput<T>,
+  falseResult: ObservableInput<F>
+): Observable<T | F>
 ```
+
+iif 用于在订阅时检查条件函数返回值以确定使用哪个数据源。
 
 在订阅的那一刻，`condition`函数被调用，如果结果为`true`，则使用 `trueResult` 作为数据源，否则使用 `falseResult`作为数据源。如果你想在两个以上的数据源之间切换可以使用[`defer`](/streams/create/defer)。
 

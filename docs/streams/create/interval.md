@@ -9,15 +9,11 @@ order: 4
 
 # interval
 
-<Alert type="info">
-
-定时发出增量数字
-
-</Alert>
-
 ```ts
 interval(period: number = 0, scheduler: SchedulerLike = asyncScheduler): Observable<number>
 ```
+
+可以理解为 setInterval，它会从 0 开始定时发出增量数字。
 
 ### 使用例子
 

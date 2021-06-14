@@ -10,7 +10,11 @@ group:
 # bindCallback
 
 ```ts
-bindCallback(callbackFunc: (args_0: any, args_1: (...res: any) => void) => void, resultSelector?: SchedulerLike | ((...args: any[]) => any), scheduler?: SchedulerLike): (...args: any[]) => Observable<unknown>
+bindCallback(
+  callbackFunc: (args_0: any, args_1: (...res: any) => void) => void,
+  resultSelector?: SchedulerLike | ((...args: any[]) => any),
+  scheduler?: SchedulerLike
+): (...args: any[]) => Observable<unknown>
 ```
 
 bindCallback 是一个将 callback 风格的源函数转换为返回 Observable 的目标函数的高阶函数（函数返回函数）。

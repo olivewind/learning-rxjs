@@ -9,17 +9,13 @@ order: 5
 
 # range
 
-<Alert type="info">
-
-创建一个发出指定范围内的数字序列的 Observable
-
-</Alert>
-
 ```ts
 range(start: number, count?: number, scheduler?: SchedulerLike): Observable<number>
 ```
 
 ![range marble diagram](./images/range.png)
+
+range 用于创建一个发出指定范围内的数字序列的 Observable。
 
 ### 使用例子
 

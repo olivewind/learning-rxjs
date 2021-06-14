@@ -88,4 +88,4 @@ order: 3
    stream$.complete();
    ```
 
-ok，到现在为止，你已经了解入门了 RxJS，现在让我们开始学习一些实用的[数据流创建](/streams/start)。
+ok，到现在为止，你已经简单了解 RxJS 基本概念，现在让我们开始学习一些实用的[数据流创建](/streams/start)。
