@@ -16,7 +16,7 @@
       <img src="https://img.shields.io/badge/国内镜像-😫-red.svg" alt="china image" />
     </a>
     <br />
-   为简化 RxJS 学习曲线而生（对应 7.x 版本）
+   为简化 RxJS（7.x）学习曲线而生
   </sup>
   <br />
   <br />
