@@ -20,19 +20,14 @@ hero:
 - 本书示例使用 TypeScript 编写，不影响阅读
 - 受限于能力水平，如遇错误请在 [Issue](https://github.com/olivewind/learning-rxjs/issues/new) 中提出
 
-<!--
-
 ### 关于作者
 
-王力国，一名常年居住在上海的软件工程师，目前效力于人工智能公司 [DataGrand（达观数据）](http://www.datagrand.com/) 。
+王力国，一名常年居住在上海的软件工程师，目前效力于人工智能公司达观数据，可以通过以下方式联系到我：
 
-你可以通过以下方式联系到我：
-
-- GitHub：[olivewind](https://github.com/olivewind)
+- 微信：kingliguo
 - 知乎：[王力国](https://www.zhihu.com/people/san-huan-mei-you-shao)
+- GitHub：[olivewind](https://github.com/olivewind)
 - 邮箱：olivewind.wang@gmail.com
-
--->
 
 <br/>
 
