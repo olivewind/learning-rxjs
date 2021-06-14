@@ -1,7 +1,7 @@
 <div align="center">
   <h1>
     <br/>
-    🚀
+    📖
     <br />
     《Rxjs 使用手册》
     <br />
@@ -10,10 +10,10 @@
   <sup>
     <br />
     <a href="https://git.liguo.run/learning-rxjs/#/">
-      <img src="https://img.shields.io/badge/在线阅读-🚀-green.svg" alt="online" />
+      <img src="https://img.shields.io/badge/在线阅读-👓-green.svg" alt="online" />
     </a>
     <a href="http://olivewind.gitee.io/learning-rxjs/#/">
-      <img src="https://img.shields.io/badge/国内镜像-🚀-red.svg" alt="china image" />
+      <img src="https://img.shields.io/badge/国内镜像-😫-red.svg" alt="china image" />
     </a>
     <br />
    为简化 RxJS 学习曲线而生
@@ -59,7 +59,7 @@
 - [`forkJoin`](http://olivewind.gitee.io/learning-rxjs/#/streams/join/forkJoin)
 - [`partition`](http://olivewind.gitee.io/learning-rxjs/#/streams/join/partition)
 
-**编排流（WIP）**
+**编排流（正在制作）**
 
 - 转换
 - 条件
@@ -70,7 +70,7 @@
 - 合并
 - 错误
 
-**高级用法（WIP）**
+**高级用法（正在制作）**
 
 - 使用调度器
 - 自定义操作符
