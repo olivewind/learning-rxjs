@@ -1,9 +1,9 @@
 ---
 hero:
-  title: RxJS 使用手册
+  title: 《RxJS 使用手册》
   desc: 为简化 RxJS 学习曲线而生
   actions:
-    - text: 进入 RxJS 的世界
+    - text: 快速入门
       link: /core/stream
 ---
 
