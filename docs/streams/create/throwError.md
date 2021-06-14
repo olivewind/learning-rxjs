@@ -17,7 +17,7 @@ throwError(errorOrErrorFactory: any, scheduler?: SchedulerLike): Observable<neve
 
 throwError 用于创建立刻抛出错误的 Observable。
 
-除非你明确想返回一个 error observable，否者在大多数操作符内部都可以直接按照 JS 语言规范抛错，错误会被 Rxjs 捕获（参考例二）。
+除非你明确想返回一个 error observable，否者在大多数操作符内部都可以直接按照 JS 语言规范抛错，错误会被 RxJS 捕获（参考例二）。
 
 ### 使用例子
 

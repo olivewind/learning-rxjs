@@ -17,7 +17,7 @@ export default defineConfig({
   metas: [
     {
       name: 'keywords',
-      content: 'Rxjs,rxjs,文档,教程',
+      content: 'RxJS,rxjs,文档,教程',
     },
     {
       name: 'description',
