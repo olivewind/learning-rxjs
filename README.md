@@ -9,10 +9,10 @@
   </h1>
   <sup>
     <br />
-    <a href="https://git.liguo.run/learning-rxjs/#/">
+    <a target="_blank" href="https://git.liguo.run/learning-rxjs/#/">
       <img src="https://img.shields.io/badge/在线阅读-👓-green.svg" alt="online" />
     </a>
-    <a href="http://olivewind.gitee.io/learning-rxjs/#/">
+    <a target="_blank" href="http://olivewind.gitee.io/learning-rxjs/#/">
       <img src="https://img.shields.io/badge/国内镜像-😫-red.svg" alt="china image" />
     </a>
     <br />
