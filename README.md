@@ -1,6 +1,5 @@
 <div align="center">
   <h1>
-    <br/>
     📖
     <br />
     《RxJS 使用手册》
