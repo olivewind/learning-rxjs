@@ -1,4 +1,5 @@
 ---
+title: 《RxJS 渐进式指南》
 hero:
   title: 《RxJS 渐进式指南》
   desc: 为简化 RxJS 学习曲线而生
