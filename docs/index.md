@@ -1,13 +1,27 @@
 ---
 hero:
-  title: 《RxJS 使用手册》
+  title: 《RxJS 渐进式指南》
   desc: 为简化 RxJS 学习曲线而生
   actions:
-    - text: 快速入门
+    - text: 快速开始 →
       link: /core/stream
+features:
+  - title: 精简
+    desc: 能用一句话讲清楚的绝不用浪费两句话，保证篇幅简短清晰
+  - title: 通俗
+    desc: 使用最通俗的词汇介绍 RxJS 的方方面面，就像阅读一本杂志那样简单
+  - title: 渐进
+    desc: 学习曲线缓和，由浅入深，一步步掌握 RxJS 核心思想
+  - title: 完整
+    desc: 包含 RxJS 所有公开 API 的介绍，不漏过任何一个特性
+  - title: 真实
+    desc: 使用真实的业务场景讲解抽象知识点，更贴切实战
+  - title: 最新
+    desc: 跟随 RxJS 更新而更新，保证内容不落后
+footer: Copyright © 2021-present
 ---
 
-### 适用读者
+<!-- ### 适用读者
 
 - 想要学习响应式编程的开发者
 - 想要学习函数式编程的开发者
@@ -29,6 +43,4 @@ hero:
 - GitHub：[olivewind](https://github.com/olivewind)
 - 邮箱：olivewind.wang@gmail.com
 
-<br/>
-
-从现在开始，跟我一起进入[RxJS 的世界 🎉 🎉 🎉](./core/stream)
+<br/> -->
