@@ -40,11 +40,11 @@
 - [`range`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/range)
 - [`iif`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/iif)
 - [`defer`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/defer)
-- [`throwError`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/throwError)
-- [`fromEvent`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/fromEvent)
-- [`fromEventPattern`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/fromEventPattern)
-- [`bindCallback`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/bindCallback)
-- [`bindNodeCallback`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/bindNodeCallback)
+- [`throwError`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/throw-error)
+- [`fromEvent`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/from-event)
+- [`fromEventPattern`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/from-event-pattern)
+- [`bindCallback`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/bind-callback)
+- [`bindNodeCallback`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/bind-node-callback)
 - [`ajax`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/ajax)
 - [`generate`](http://olivewind.gitee.io/learning-rxjs/#/streams/create/generate)
 
@@ -52,10 +52,10 @@
 
 - [`concat`](http://olivewind.gitee.io/learning-rxjs/#/streams/join/concat)
 - [`merge`](http://olivewind.gitee.io/learning-rxjs/#/streams/join/merge)
-- [`combineLatest`](http://olivewind.gitee.io/learning-rxjs/#/streams/join/combineLatest)
+- [`combineLatest`](http://olivewind.gitee.io/learning-rxjs/#/streams/join/combine-latest)
 - [`zip`](http://olivewind.gitee.io/learning-rxjs/#/streams/join/zip)
 - [`race`](http://olivewind.gitee.io/learning-rxjs/#/streams/join/race)
-- [`forkJoin`](http://olivewind.gitee.io/learning-rxjs/#/streams/join/forkJoin)
+- [`forkJoin`](http://olivewind.gitee.io/learning-rxjs/#/streams/join/fork-join)
 - [`partition`](http://olivewind.gitee.io/learning-rxjs/#/streams/join/partition)
 
 **编排流（正在制作）**
