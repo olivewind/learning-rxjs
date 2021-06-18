@@ -1,5 +1,5 @@
 ---
-title: 基本概念
+title: 学习路径
 nav:
   path: /streams
   title: 创建流
@@ -7,4 +7,4 @@ nav:
 order: 0
 ---
 
-## 几种流
+## 学习路径
