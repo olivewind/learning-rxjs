@@ -24,7 +24,7 @@ combineLatest 会将多个数据流最新推送的值按顺序组装成一个组
 4. 所有数据流结束，combineLatest 则结束
 5. 如果某个数据流未推送值而直接结束，combineLatest 则立刻结束
 
-### 使用例子
+#### 使用例子
 
 ```typescript
 import { combineLatest, Observable, of } from 'rxjs';

@@ -20,7 +20,7 @@ concat 会将多个数据流按照顺序合并成一个流
 1. 上一个流完成了，才会订阅下一个流
 2. 当最后一个流都完成了，concat 才会完成
 
-### 使用例子
+#### 使用例子
 
 ```typescript
 import { concat, of } from 'rxjs';

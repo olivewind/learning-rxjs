@@ -25,7 +25,7 @@
 
 **快速入门**
 
-- [`第 0 步：认识概念`](http://olivewind.gitee.io/learning-rxjs/#/core/stream)
+- [`第 0 步：基本概念`](http://olivewind.gitee.io/learning-rxjs/#/core/stream)
 - [`第 1 步：创建流`](http://olivewind.gitee.io/learning-rxjs/#/core/observable)
 - [`第 2 步：编排流`](http://olivewind.gitee.io/learning-rxjs/#/core/operators)
 - [`第 3 步：订阅流`](http://olivewind.gitee.io/learning-rxjs/#/core/subscription)
@@ -61,6 +61,8 @@
 **编排流（正在制作）**
 
 - 转换
+  - [`map 相关`](http://olivewind.gitee.io/learning-rxjs/#/operators/transformation/map)
+  - [`switch 相关`](http://olivewind.gitee.io/learning-rxjs/#/operators/transformation/switch)
 - 条件
 - 筛选
 - 工具

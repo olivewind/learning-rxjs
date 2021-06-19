@@ -82,7 +82,7 @@ export function fromEvent<T>(
 
 源码位置：[src/internal/observable/fromEvent.ts#L251](https://github.com/ReactiveX/rxjs/blob/4f4ac0074b4bc8aead728e2fa7aa0a9061f56f0b/src/internal/observable/fromEvent.ts#L251)
 
-### 使用例子
+#### 使用例子
 
 ##### 监听 DOM 事件
 

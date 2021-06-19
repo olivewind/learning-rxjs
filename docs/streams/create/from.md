@@ -17,7 +17,7 @@ from<T>(input: ObservableInput<T>, scheduler?: SchedulerLike): Observable<T>
 
 from 可以从数组、类似数组的对象、Promise、可迭代对象或类似 Observable 的对象创建一个 Observable
 
-### 使用例子
+#### 使用例子
 
 ##### 将数组转换为 Observable
 

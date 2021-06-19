@@ -30,7 +30,7 @@ race 和 Promise 的 race 很类似，会同时订阅多个数据流，一旦某
 1. 就像竞赛一样，第一个推送值的数据流将会被采用
 2. 第一个流如果不是推送值而是出错，那么该流也会被采用
 
-### 使用例子
+#### 使用例子
 
 ```typescript
 import { race, interval } from 'rxjs';

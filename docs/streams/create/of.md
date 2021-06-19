@@ -17,7 +17,7 @@ of<T>(...args: (SchedulerLike | T)[]): Observable<T>
 
 of 可以将任意值转换为 Observable。
 
-### 使用例子
+#### 使用例子
 
 ```ts
 import { of } from 'rxjs';

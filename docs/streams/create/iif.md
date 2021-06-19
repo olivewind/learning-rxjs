@@ -21,7 +21,7 @@ iif 用于在订阅时检查条件函数返回值以确定使用哪个数据源�
 
 在订阅的那一刻，`condition`函数被调用，如果结果为`true`，则使用 `trueResult` 作为数据源，否则使用 `falseResult`作为数据源。如果你想在两个以上的数据源之间切换可以使用[`defer`](/streams/create/defer)。
 
-### 使用例子
+#### 使用例子
 
 ```ts
 import { iif, of } from 'rxjs';

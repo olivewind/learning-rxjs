@@ -15,7 +15,7 @@ interval(period: number = 0, scheduler: SchedulerLike = asyncScheduler): Observa
 
 可以理解为 setInterval，它会从 0 开始定时发出增量数字。
 
-### 使用例子
+#### 使用例子
 
 ```ts
 import { interval } from 'rxjs';

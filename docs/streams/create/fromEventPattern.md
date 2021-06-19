@@ -27,7 +27,7 @@ fromEventPattern 接受一个 `addHandler` 事件处理函数作为第一个参�
 
 fromEventPattern 相比 [formEvent](/streams/create/from-event) 虽然代码繁琐一些，但是可扩展性更强，它可以支持任意接口的可监听事件，换句话说所有 [formEvent](/streams/create/from-event) 都可以转换为 fromEventPattern 的写法，比如下面这个例子
 
-### 使用例子
+#### 使用例子
 
 ##### 监听 DOM 事件（fromEvent 写法）
 

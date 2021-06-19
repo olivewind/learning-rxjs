@@ -17,7 +17,7 @@ range(start: number, count?: number, scheduler?: SchedulerLike): Observable<numb
 
 range 用于创建一个发出指定范围内的数字序列的 Observable。
 
-### 使用例子
+#### 使用例子
 
 ```ts
 import { range } from 'rxjs';

@@ -17,7 +17,7 @@ defer<R extends ObservableInput<any>>(observableFactory: () => R): Observable<Ob
 
 defer 用于惰性创建 Observable，即只有在它被订阅时才创建。
 
-### 使用例子
+#### 使用例子
 
 ```ts
 import { defer, of } from 'rxjs';

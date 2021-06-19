@@ -25,7 +25,7 @@ bindNodeCallback(
 
 4. `bindNodeCallback` 也可以在非 Node.js 环境中使用，“Node.js 风格”只是一种约定。
 
-### 使用例子
+#### 使用例子
 
 ```typescript
 import { bindNodeCallback } from 'rxjs';

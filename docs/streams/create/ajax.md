@@ -93,7 +93,7 @@ function ajaxPatch<T>(
 
 源码位置：[src/internal/ajax/ajax.ts#L138](https://github.com/ReactiveX/rxjs/blob/4f4ac0074b4bc8aead728e2fa7aa0a9061f56f0b/src/internal/ajax/ajax.ts#L138)
 
-### 使用例子
+#### 使用例子
 
 **使用 ajax() 获取从 API 返回的响应对象**
 

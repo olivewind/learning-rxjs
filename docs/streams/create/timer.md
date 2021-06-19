@@ -15,7 +15,7 @@ timer(dueTime: number | Date = 0, intervalOrScheduler?: number | SchedulerLike, 
 
 timer 可以理解为是支持指定起始执行时间的 interval。
 
-### 使用例子
+#### 使用例子
 
 ##### 从相对时间偏移开始发送
 

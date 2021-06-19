@@ -21,7 +21,7 @@ partition<T>(
 
 partition 会将一条数据流按照条件分割为两条数据流。
 
-### 使用例子
+#### 使用例子
 
 ```typescript
 import { of, partition } from 'rxjs';

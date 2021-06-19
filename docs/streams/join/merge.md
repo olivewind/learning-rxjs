@@ -31,7 +31,7 @@ merge 会将多个数据流合并成一个流
 1. 任意数据流推送值，merge 都会推送值
 2. 只有所有流都完成了，merge 才会完成
 
-### 使用例子
+#### 使用例子
 
 ```typescript
 import { merge, Observable } from 'rxjs';
