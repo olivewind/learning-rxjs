@@ -1,7 +1,7 @@
 ---
-title: 《RxJS 渐进式指南》
+title: 《RxJS 渐进式学习指南》
 hero:
-  title: 《RxJS 渐进式指南》
+  title: 《RxJS 渐进式学习指南》
   desc: 为简化 RxJS 学习曲线而生
   actions:
     - text: 快速开始 →

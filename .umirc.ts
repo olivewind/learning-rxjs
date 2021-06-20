@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  title: 'RxJS 渐进式指南',
+  title: '《RxJS 渐进式学习指南》',
   locales: [
     ['zh-CN', '中文'],
     ['en-US', 'English'],

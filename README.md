@@ -2,7 +2,7 @@
   <h1>
     📖
     <br />
-    《RxJS 渐进式指南》
+    《RxJS 渐进式学习指南》
     <br />
     <br />
   </h1>
@@ -15,7 +15,7 @@
       <img src="https://img.shields.io/badge/国内镜像-😫-red.svg" alt="china image" />
     </a>
     <br />
-   为简化 RxJS（7.x）学习曲线而生
+   为简化 RxJS 学习曲线而生
   </sup>
   <br />
   <br />
