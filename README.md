@@ -61,8 +61,10 @@
 **编排流（正在制作）**
 
 - 转换
-  - [`map 相关`](http://olivewind.gitee.io/learning-rxjs/#/operators/transformation/map)
-  - [`switch 相关`](http://olivewind.gitee.io/learning-rxjs/#/operators/transformation/switch)
+  - [`map`](http://olivewind.gitee.io/learning-rxjs/#/operators/transformation/map)
+  - [`switchMap`](http://olivewind.gitee.io/learning-rxjs/#/operators/transformation/switch-map)
+  - [`mergeMap`](http://olivewind.gitee.io/learning-rxjs/#/operators/transformation/merge-map)
+  - [`concatMap`](http://olivewind.gitee.io/learning-rxjs/#/operators/transformation/concat-map)
 - 条件
 - 筛选
 - 工具
