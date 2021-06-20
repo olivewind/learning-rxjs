@@ -13,7 +13,7 @@ group:
 of<T>(...args: (SchedulerLike | T)[]): Observable<T>
 ```
 
-![of](./images/of.png)
+<img src="./images/of.png" alt="of" style="zoom:50%;" />
 
 of 可以将任意值转换为 Observable。
 

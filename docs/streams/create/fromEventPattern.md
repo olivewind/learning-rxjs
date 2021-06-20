@@ -17,7 +17,7 @@ fromEventPattern<T>(
 ): Observable<T | T[]>
 ```
 
-![fromEventPattern](./images/fromEventPattern.png)
+<img src="./images/fromEventPattern.png" alt="fromEventPattern" style="zoom:50%;" />
 
 fromEventPattern 可以从任意可监听事件创建一个 Observable。
 

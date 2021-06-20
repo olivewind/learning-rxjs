@@ -13,7 +13,7 @@ group:
 combineLatest<O extends ObservableInput<any>, R>(...args: any[]): Observable<R> | Observable<ObservedValueOf<O>[]>
 ```
 
-![combineLatest](./images/combineLatest.png)
+<img src="./images/combineLatest.png" alt="combineLatest" style="zoom:50%;" />
 
 combineLatest 会将多个数据流最新推送的值按顺序组装成一个组合再推送的数据流
 
@@ -79,7 +79,7 @@ output$.subscribe(x => {
 
 上面这个例子的[弹珠图](https://swirly.dev/#?code=-1----2----3%7C%20%0Atitle%20=%20a$%20%0A%0A----4----5----6----7%7C%20%0Atitle%20=%20b$%20%0A%0A%3E%20combineLatest%20%0A%0A----a-b--c-d--e----f%7C%20%0Atitle%20=%20output$%0Aa%20:=%20%5B14%5D%20%0Ab%20:=%20%5B24%5D%20%0Ac%20:=%20%5B25%5D%20%0Ad%20:=%20%5B35%5D%20%0Ae%20:=%20%5B36%5D%20%0Af%20:=%20%5B37%5D)如下
 
-![combineLatest](./images/combineLatest-demo1.png)
+<img src="./images/combineLatest-demo1.png" alt="combineLatest"  />
 
 参考资料：
 

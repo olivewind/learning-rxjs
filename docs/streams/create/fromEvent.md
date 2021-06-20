@@ -26,7 +26,7 @@ interface EventListenerOptions {
 }
 ```
 
-![fromEvent](./images/fromEvent.png)
+<img src="./images/fromEvent.png" alt="fromEvent" style="zoom:50%;" />
 
 fromEvent 可以从 DOM 事件、Node.js EventEmitter 事件或其他事件创建一个 Observable。
 

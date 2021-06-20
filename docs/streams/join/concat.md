@@ -13,7 +13,7 @@ group:
 concat(...args: any[]): Observable<unknown>
 ```
 
-![concat](./images/concat.png)
+<img src="./images/concat.png" alt="concat" style="zoom:50%;" />
 
 concat 会将多个数据流按照顺序合并成一个流
 

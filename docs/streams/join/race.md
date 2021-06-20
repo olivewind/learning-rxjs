@@ -23,7 +23,7 @@ race<T>(...sources: (
 ): Observable<any>
 ```
 
-![race](./images/race.png)
+<img src="./images/race.png" alt="race" style="zoom:50%;" />
 
 race 和 Promise 的 race 很类似，会同时订阅多个数据流，一旦某条数据流发出第一个值，那么会采用该数据流并取消其它数据流的订阅。
 

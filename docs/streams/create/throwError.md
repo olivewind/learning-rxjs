@@ -13,7 +13,7 @@ order: 8
 throwError(errorOrErrorFactory: any, scheduler?: SchedulerLike): Observable<never>
 ```
 
-![throw marble diagram](./images/throw.png)
+<img src="./images/throw.png" alt="throw marble diagram" style="zoom:50%;" />
 
 throwError 用于创建立刻抛出错误的 Observable。
 

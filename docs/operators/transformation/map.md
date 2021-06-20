@@ -1,5 +1,5 @@
 ---
-title: map 相关
+title: map
 order: 1
 group:
   path: /transformation
@@ -15,7 +15,7 @@ group:
 map<T, R>(project: (value: T, index: number) => R, thisArg?: any): OperatorFunction<T, R>
 ```
 
-![map](./images/map.png)
+<img src="./images/map.png" alt="map" style="zoom:50%;" />
 
 map 是 RxJS 中非常常用的一个操作符，它的作用很像 `Array.prototype.map` 用于将发射的值映射成另一个值
 
@@ -56,7 +56,7 @@ mapTo(y);
 map(() => y);
 ```
 
-![mapTo](./images/mapTo.png)
+<img src="./images/mapTo.png" alt="mapTo" style="zoom:50%;" />
 
 ##### 使用例子
 

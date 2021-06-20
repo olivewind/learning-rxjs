@@ -13,7 +13,7 @@ order: 5
 range(start: number, count?: number, scheduler?: SchedulerLike): Observable<number>
 ```
 
-![range marble diagram](./images/range.png)
+<img src="./images/range.png" alt="range marble diagram" style="zoom:50%;" />
 
 range 用于创建一个发出指定范围内的数字序列的 Observable。
 

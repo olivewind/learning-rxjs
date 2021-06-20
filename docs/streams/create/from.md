@@ -13,7 +13,7 @@ group:
 from<T>(input: ObservableInput<T>, scheduler?: SchedulerLike): Observable<T>
 ```
 
-![](./images/from.png)
+<img src="./images/from.png" style="zoom:50%;" />
 
 from 可以从数组、类似数组的对象、Promise、可迭代对象或类似 Observable 的对象创建一个 Observable
 

@@ -13,7 +13,7 @@ group:
 defer<R extends ObservableInput<any>>(observableFactory: () => R): Observable<ObservedValueOf<R>>
 ```
 
-![延迟大理石图](./images/defer.png)
+<img src="./images/defer.png" style="zoom:50%;" />
 
 defer 用于惰性创建 Observable，即只有在它被订阅时才创建。
 

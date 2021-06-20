@@ -13,7 +13,7 @@ group:
 forkJoin(...args: any[]): Observable<any>
 ```
 
-![forkJoin](./images/forkJoin.png)
+<img src="./images/forkJoin.png" alt="forkJoin" style="zoom:50%;" />
 
 forkJoin 和 zip 很类似，不过它只取每个流的最后一个值。
 

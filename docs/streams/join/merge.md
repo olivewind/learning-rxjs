@@ -24,7 +24,7 @@ merge(...args: (
 ): Observable<unknown>
 ```
 
-![merge](./images/merge.png)
+<img src="./images/merge.png" alt="merge" style="zoom:50%;" />
 
 merge 会将多个数据流合并成一个流
 

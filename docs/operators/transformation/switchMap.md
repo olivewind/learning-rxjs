@@ -1,5 +1,5 @@
 ---
-title: switch 相关
+title: switchMap
 order: 2
 group:
   path: /transformation
@@ -19,9 +19,9 @@ switchMap<T, R, O extends ObservableInput<any>>(
 ): OperatorFunction<T, ObservedValueOf<O> | R>
 ```
 
-![switchMap 大理石图](./images/switchMap.png)
+<img src="./images/switchMap.png" alt="switchMap 大理石图" style="zoom:50%;" />
 
-switchMap 是 RxJS 中非常重要且常用的一个操作符，它可以将一个值映射成一个新的数据流，并且它有一个重要的特点是 switchMap 会先停止上一次转换的新数据流再重新映射成一个新的数据流
+switchMap 可以将一个值映射成一个内部 Observable，然后将所有这些内部 Observable 展平。并且它有一个重要的特点是当一个新的内部 Observable 被发射时，`switchMap`会 停止从先前发射的内部 Observable 发射项目并开始从新的内部 Observable 发射项目。
 
 > 注意看上图中在源数据流发出 5 的时候，会将前面的刚映射出来的数据流（30-30）停止掉，并使用新的数据流（50-50-50）
 
@@ -99,7 +99,7 @@ switchMapTo(y$);
 switchMap(() => y$);
 ```
 
-![switchMapTo](./images/switchMapTo.png)
+<img src="./images/switchMapTo.png" alt="switchMapTo" style="zoom:50%;" />
 
 ##### 使用例子
 

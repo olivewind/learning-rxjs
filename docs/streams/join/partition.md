@@ -17,7 +17,7 @@ partition<T>(
 ): [Observable<T>, Observable<T>]
 ```
 
-![partition](./images/partition.png)
+<img src="./images/partition.png" alt="partition" style="zoom:50%;" />
 
 partition 会将一条数据流按照条件分割为两条数据流。
 
