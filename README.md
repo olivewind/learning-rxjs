@@ -9,10 +9,10 @@
   <sup>
     <br />
     <a target="_blank" href="https://git.liguo.run/learning-rxjs/#/">
-      <img src="https://img.shields.io/badge/在线阅读-👓-green.svg" alt="online" />
+      <img src="https://img.shields.io/badge/在线阅读-🐌-green.svg" alt="online" />
     </a>
     <a target="_blank" href="http://olivewind.gitee.io/learning-rxjs/#/">
-      <img src="https://img.shields.io/badge/国内镜像-😫-red.svg" alt="china image" />
+      <img src="https://img.shields.io/badge/国内镜像-🚀-red.svg" alt="china image" />
     </a>
     <br />
    为简化 RxJS 学习曲线而生
