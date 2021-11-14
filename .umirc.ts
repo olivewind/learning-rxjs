@@ -25,7 +25,7 @@ export default defineConfig({
     },
   ],
   base: '/',
-  publicPath: process.env.NODE_ENV === 'production' ? '/learning-rxjs/' : '/',
+  publicPath: '/',
   navs: [
     null, // null 值代表保留约定式生成的导航，只做增量配置
     {
