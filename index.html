@@ -83,7 +83,7 @@
         background-color: #c2185b !important;
       }
     </style>
-    <link rel="stylesheet" href="/umi.09c6ed48.css" />
+    <link rel="stylesheet" href="/umi.8c6752e0.css" />
     <script>
       window.routerBase = "/";
     </script>
@@ -97,7 +97,7 @@
           r = ["light", "dark", "auto"];
         document.documentElement.setAttribute(
           "data-prefers-color",
-          e === r[2] ? (t ? r[1] : r[0]) : r.includes(e) ? e : r[0]
+          e === r[2] ? (t ? r[1] : r[0]) : r.indexOf(e) > -1 ? e : r[0]
         );
       })();
     </script>
@@ -105,6 +105,6 @@
   <body>
     <div id="root"></div>
 
-    <script src="/umi.0f135a5f.js"></script>
+    <script src="/umi.748113d5.js"></script>
   </body>
 </html>
