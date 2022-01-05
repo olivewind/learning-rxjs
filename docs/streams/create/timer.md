@@ -32,6 +32,8 @@ timer(0, 2000).subscribe(x => {
 // ....
 ```
 
+[![Edit time-1](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/time-1-y9uif?expanddevtools=1&fontsize=14&hidenavigation=1&theme=dark)
+
 ##### 从绝对时间开始发送
 
 ```typescript
@@ -51,6 +53,8 @@ timer(date, 2000).subscribe(x => {
 // 2
 // ....
 ```
+
+[![Edit time-2](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/time-2-upknh?expanddevtools=1&fontsize=14&hidenavigation=1&theme=dark)
 
 <br/>
 

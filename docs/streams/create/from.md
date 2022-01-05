@@ -33,6 +33,8 @@ from(array).subscribe(x => console.log(x));
 // 3
 ```
 
+[![Edit from-1](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/from-1-k89lf?expanddevtools=1&fontsize=14&hidenavigation=1&theme=dark)
+
 ##### 将 Promise 转换为 Observable
 
 ```typescript
@@ -51,6 +53,8 @@ from(promise).subscribe(res => console.log(res));
 
 // hello world
 ```
+
+[![Edit from-2](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/from-2-b3qu7?fontsize=14&hidenavigation=1&theme=dark&expanddevtools=1)
 
 ##### 将迭代器转换为 Observable
 
@@ -78,6 +82,8 @@ from(iterator)
 // 4
 // 5
 ```
+
+[![Edit from-3](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/from-3-t8k5t?fontsize=14&hidenavigation=1&theme=dark&expanddevtools=1)
 
 <br/>
 
